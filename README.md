@@ -1,3 +1,5 @@
+** The documentation process are still in progress 
+
 # ClimateHack-UCL
 This is our attempt in creating a Machine Learning model that is able to predict future satellite imagery
 
@@ -83,6 +85,3 @@ The way this can be achieved is by doing cross attention between the optical flo
 Shown below is the architecture of the updated model:
 
 
-
-
-** The documentation process is still in progress 
