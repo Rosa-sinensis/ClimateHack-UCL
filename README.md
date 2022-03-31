@@ -14,7 +14,7 @@ This model has allowed our team to reach a score of ~0.78 in the competition
 
 
 ## Setup
-
+**In Progress
 
 ## Data Preprocessing
 Since the challenge of this competition is to predict the centre of the next 24 images (dimension: 64x64) from the given 12 images (Dimension: 128x128),
@@ -81,3 +81,8 @@ We believe that incorporating optical flow into the model is beneficial if done 
 The way this can be achieved is by doing cross attention between the optical flow and the output of PredRNN. This is then passed through the axial attention layer before we receive the next frame of the satellite imagery.
 
 Shown below is the architecture of the updated model:
+
+
+
+
+** The documentation process is still in progress 
