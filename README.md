@@ -75,13 +75,10 @@ Shown below are the training loss for both model:
 
 From the graph above, it can be seen that the performance of the updated model does not vary that much from the first model. We believe the reason could stem from the inductive bias that we introduce when processing the optical flow. The inductive bias that we indtroduce (convolutional layer) does not able to capture additional features that is useful for the model to learn.
 
-we can see that our model (both Model 1 and Model 2) has done a decent job in predicting the satellite image at the first half of the video. However, at the second half of the videos, both models fail to predict the satellite image (in fact, our predicted images seem not to have any sort of movement in the cloud) effectively.
+We can see that our model (both Model 1 and Model 2) has done a decent job in predicting the satellite image at the first half of the video (the first 12 images). However, at the second half of the videos, both models fail to predict the satellite image (in fact, our predicted images seem not to have any sort of movement in the cloud) effectively.
 
 ## Future Improvement
 We believe that incorporating optical flow into the model is beneficial if done right. Hence, stemming from our previous analysis, instead of processing the optical flow features via convolutional layer, what if we let the data speak by itself, in other words, let the data determine what bias is good for the model.
 
-The way this can be achieved is by doing cross attention between the optical flow and the output of PredRNN. This is then passed through the axial attention layer before we receive the next frame of the satellite imagery.
-
-Shown below is the architecture of the updated model:
-
+One of the way this can be achieved is by doing cross attention between the optical flow and the output of PredRNN. This is then passed through the axial attention layer before we receive the next frame of the satellite imagery.
 
